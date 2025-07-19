@@ -2,13 +2,23 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Login Success</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | SecureApp</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <h1>Login Successful!</h1>
-    <p>Welcome, <span th:text="${#authentication.name}">User</span>!</p>
-    <form th:action="@{/logout}" method="post">
-        <button type="submit">Logout</button>
-    </form>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>Welcome, <span th:text="${#authentication.name}">User</span>!</h2>
+            </div>
+            <div class="card-body" style="text-align: center;">
+                <p style="margin-bottom: 20px;">You have successfully logged in to SecureApp.</p>
+                <form th:action="@{/logout}" method="post">
+                    <button type="submit" class="btn">Logout</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

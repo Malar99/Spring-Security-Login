@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureApp | Home</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Welcome to SecureApp</h1>
+            <p>A secure authentication system built with Spring Boot and Spring Security to protect your data with modern encryption and best practices.</p>
+            <div class="cta-buttons">
+                <a th:href="@{/login}" class="cta-btn cta-btn-primary">Login</a>
+                <a th:href="@{/register}" class="cta-btn cta-btn-secondary">Register</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
